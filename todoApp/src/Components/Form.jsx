@@ -1,0 +1,21 @@
+import { useState } from "react";
+import style from "./form.module.css";
+export default function Form({todos, setTodos}){
+
+    const [todo, setTodo] = useState("")
+
+
+    function handleClick(e){
+        e.preventDefault();
+        setTodos([...todos, todo]);
+
+        setTodo("")
+    }
+
+    return <form className={style.todoform} onSubmit={(e) => handleClick(e)}>
+        <div className={style.inputContainer}>
+        <input className={style.modernInput} type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
+        <button className={style.modernButton}>Add</button>
+        </div>
+    </form>
+}

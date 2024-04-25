@@ -1,0 +1,24 @@
+.item {
+    width: 500px;
+    font-size: larger;
+    margin: 0 auto;
+    color: red;
+}
+.itemName{
+    font-weight: bold;
+    padding: 20px;
+}
+.itemBtn {
+    float: right;
+    width: 60px;
+    padding: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+}
+.line{
+    height: 20px;
+}
+.complete{
+    stroke: saddlebrown;
+}
